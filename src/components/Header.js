@@ -56,7 +56,8 @@ function AppHeader() {
             </div>
 
             <div className="App-header-wrap">
-                <Link className="App-logo" to="/">
+                <Link className="App-logo" to="/developerscode">
+                    {/* <Link className="App-logo" to="./"> */}
                     <img src={logo} alt="logo" />
                 </Link>
 

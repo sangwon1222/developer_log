@@ -20,14 +20,14 @@ function App() {
                 <Switch>
                     {/* 메인 페이지 */}
                     <Route exact path="/developerscode">
-                        {/* <Route exact path="/"> */}
+                        {/* <Route exact path="./"> */}
                         <PostStage />
                         <hr />
                     </Route>
 
                     {/* 회원가입 페이지 */}
                     <Route path="/developerscode/signup">
-                        {/* <Route path="/signup"> */}
+                        {/* <Route path="./signup"> */}
                         <SignUp />
                     </Route>
                 </Switch>
