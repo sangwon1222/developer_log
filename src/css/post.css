@@ -1,0 +1,74 @@
+.post-stage {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+
+  margin: 0 auto;
+  box-sizing: inherit;
+
+  max-width: 1200px;
+}
+
+.post {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+  min-width: 300px;
+  min-height: 300px;
+}
+.post-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* .post:last-child {
+  flex: 1 1 100%;
+} */
+
+.title {
+  display: block;
+  flex: 1 1 100%;
+}
+
+.like {
+  position: relative;
+  margin: 0 10px 0 20px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.like-emoji {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.25s;
+}
+
+.like:active .like-emoji {
+  transform: translate(-50%, -50%) scale(1.6);
+}
+
+@media (min-width: 1180px) {
+}
+
+@media (min-width: 801px) and (max-width: 1179px) {
+}
+
+@media (max-width: 800px) {
+}

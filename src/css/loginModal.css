@@ -1,0 +1,133 @@
+.loginModal{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index:99;
+}
+
+.login-wrap{
+    position: fixed;
+    top:50%;
+    left:50%;
+    height: 600px;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.close{
+    position: relative;
+    float: right;
+    width: 60px;
+    height:60px;
+    cursor: pointer;
+}
+.close:before , .close:after{
+    content: '';
+    display: block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 40px; height: 4px;
+    background: #35495e;
+    transition: all 0.25s;
+}
+.close:before{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.close:after{
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.close:hover:before{
+    transform: translate(-50%,-50%) rotate(-45deg);
+    background: #41b883;
+}
+.close:hover:after{
+    transform: translate(-50%,-50%) rotate(45deg);
+    background: #41b883;
+}
+
+.loginTitle > span{
+    display: block;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #35495e;
+}
+.loginTitle > span:last-child{
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #bcbcbc;
+}
+
+.loginInput{
+    padding: 10px;
+    font-size: 14px;
+    border:2px #000 solid;
+    margin-right: 10px;
+}
+.loginBtn{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #41b883;
+    color: #35495e;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.loginBtn:hover{
+    background-color: #35495e;
+    color: #41b883;
+    animation: shake 0.25s forwards;
+}
+@keyframes shake {
+    0%{
+        margin-right: -10px;
+    }
+    30%{
+        margin-right: 10px;
+    }
+    60%{
+        margin-right: -10px;
+    }
+    90%{
+        margin-right: 10px;
+    }
+    100%{
+        margin: 0 ;
+    }
+}
+
+.loginSubTitle{
+    display: block;
+    margin: 40px 0;
+    font-size: 16px;
+}
+
+.loginSubTitle > button{
+    margin: 0 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    border: 2px #000 solid;
+}
+
+@media (min-width: 901px) {
+    .login-wrap{
+        width: 60%;
+        max-width: 800px;
+        min-width: 500px;
+        padding: 20px 40px;
+    }
+}
+  
+  @media (max-width: 900px) {
+    .login-wrap{
+        width: 100%;
+        padding: 10px 20px;
+    }
+  }

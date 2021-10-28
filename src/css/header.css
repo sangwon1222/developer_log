@@ -1,0 +1,114 @@
+.App-header {
+  padding: 10px 0;
+  height: 60px;
+  font-size: calc(10px + 2vmin);
+  background-color: #6084ab;
+  color: #35495e;
+}
+
+.App-header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s 0.25s;
+}
+
+.App-logo {
+  position: absolute;
+  left: 20px;
+  max-width: 150px;
+  width: 150px;
+  height: auto;
+  transition: all 0.25s 0.25s;
+}
+.App-logo > img{
+  width: 100%;
+}
+
+.App-search {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+  white-space: wrap;
+  transition: all 0.25s;
+}
+.App-search-input {
+  overflow: hidden;
+  display: none;
+  padding: 0 10px;
+  width: 400px;
+  height: 100%;
+  white-space: wrap;
+  border: none;
+  transition: width 0.5s;
+}
+.App-search-logo {
+  float: right;
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.App-search-logo:before,
+.App-search-logo:after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.25s;
+}
+.App-search-logo:before {
+  top: 80%;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background-color: #35495e;
+}
+.App-search-logo:after {
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 4px #35495e solid;
+  border-radius: 100%;
+}
+.App-search-logo:hover:before {
+  background-color: #41b883;
+}
+.App-search-logo:hover:after {
+  border: 4px #41b883 solid;
+}
+
+.App-login {
+  position: relative;
+  margin: 0 40px;
+  padding: 6px 10px;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 20px;
+  border: 2px #35495e solid;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.App-login:hover {
+  border: 2px #41b883 solid;
+  color: #41b883;
+}
+
+@media (min-width: 801px) {
+  .App-header-wrap {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .App-header-wrap {
+    max-width: 800px;
+  }
+}
