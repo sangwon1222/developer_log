@@ -1,0 +1,57 @@
+$main_color: #6084ab;
+$sub_color: #35495e;
+$green_color: #41b883;
+
+.sign_up_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    border: 2px black solid;
+    .name_wrap,
+    .id_wrap,
+    .pw_wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        margin: 10px auto;
+        font-weight: 800;
+        label {
+            width: 20%;
+            min-width: 100px;
+            text-align: start;
+        }
+        #signup_name_input,
+        #signup_id_input,
+        #signup_pw_input {
+            max-width: 20rem;
+            flex: 40%;
+            padding: 0.5rem;
+            border: 2px #000 solid;
+        }
+    }
+
+    .id_duplicate {
+        height: 100%;
+        margin-left: 1rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        font-weight: 800;
+        letter-spacing: -0.1rem;
+        background-color: $main_color;
+    }
+
+    .sign_up_submit {
+        margin: 4rem auto 1rem;
+        padding: 1rem;
+        background: $main_color;
+        color: $green_color;
+        font-weight: 800;
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+    }
+}
