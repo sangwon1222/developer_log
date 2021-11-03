@@ -8,6 +8,7 @@ import gsap from 'gsap'
 
 function AppHeader() {
     const [showSearchInputFlag, controllSearchInput] = useState([false])
+
     function showLoginModal() {
         document.getElementsByClassName('loginModal')[0].style.display = 'block'
     }
@@ -56,8 +57,8 @@ function AppHeader() {
             </div>
 
             <div className="App-header-wrap">
-                <Link className="App-logo" to="/developerscode">
-                    {/* <Link className="App-logo" to="./"> */}
+                {/* <Link className="App-logo" to="/developerscode"> */}
+                <Link className="App-logo" to="/">
                     <img src={logo} alt="logo" />
                 </Link>
 
@@ -70,6 +71,12 @@ function AppHeader() {
 
                 <div className="App-login" onClick={() => showLoginModal()}>
                     로그인
+                </div>
+
+                <div className="App-info">
+                    <Link className="info_icon" to="/myInfo">
+                        INFO
+                    </Link>
                 </div>
             </div>
         </div>

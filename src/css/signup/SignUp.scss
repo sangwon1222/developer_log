@@ -10,9 +10,7 @@ $green_color: #41b883;
     margin: 0 auto;
     padding: 3rem 0;
     border: 2px black solid;
-    .name_wrap,
-    .id_wrap,
-    .pw_wrap {
+    .sign_up_input_wrap {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -24,9 +22,7 @@ $green_color: #41b883;
             min-width: 100px;
             text-align: start;
         }
-        #signup_name_input,
-        #signup_id_input,
-        #signup_pw_input {
+        .signup_input {
             max-width: 20rem;
             flex: 40%;
             padding: 0.5rem;
@@ -36,7 +32,7 @@ $green_color: #41b883;
 
     .id_duplicate {
         height: 100%;
-        margin-left: 1rem;
+        margin-left: 100px;
         padding: 0.5rem;
         border-radius: 0.5rem;
         color: #fff;
